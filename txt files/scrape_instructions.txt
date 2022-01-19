@@ -1,0 +1,4 @@
+Install Chrome Extension: https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi/related?hl=en
+Go to Web Page: http://directory.tacoma.uw.edu/employees/faculty
+Open up chrome developer console.
+Copy-and-paste-and-enter the following: scrape.txt contents

@@ -1,0 +1,1 @@
+The apk has all of the files necessary to run the app. Simply drag the apk file onto an android virtual device, or install it on an android phone.

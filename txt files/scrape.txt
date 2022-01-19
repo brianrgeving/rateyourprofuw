@@ -1,0 +1,16 @@
+var script = document.createElement('script');script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js";document.getElementsByTagName('head')[0].appendChild(script);
+var rows = document.getElementsByTagName('tbody')[0].getElementsByTagName('tr')
+for (var row in rows) {
+if (typeof row != 'undefined' && typeof row.children != 'undefined' && row.children.length >= 4) {
+id = row.children[0].children[0].href.split('/')[4]
+full_name = row.children[0].children[0].innerText
+name_parts = full_name.split(', ')
+first_name = name_parts[1]
+last_name = name_parts[0]
+email = row.children[0].children[2].innerText
+phone_number = row.children[1].innerText
+position_title = row.children[2].innerText
+department = row.children[3].innerText
+$.get('http://cssgate.insttech.washington.edu/~dmuffler/445/instructor.php?verb=CREATE&sid=5a1da2d0e34f2&first_name=' + first_name + '&last_name=' + last_name + '&position_title=' + position_title + '&department_name=' + department + '&phone_number=' + phone_number + '&email=' + email)
+}
+}
